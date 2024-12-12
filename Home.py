@@ -5,7 +5,8 @@ from openai import OpenAI
 from model_utils import call_chat_model
 import os
 
-client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
+#client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
+client = OpenAI(api_key=st.secrets['OPENAI_API_KEY'])
 
 #my_key=''
 #client = OpenAI(api_key=my_key)
